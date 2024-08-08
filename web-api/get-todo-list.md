@@ -1,8 +1,8 @@
 ---
-title: Caricamento TodoList di un utente
+title: Caricamento TodoList
 description: Visualizzare le attività attive o completate assegnate ad un utente
 published: true
-date: 2024-08-08T08:24:05.196Z
+date: 2024-08-08T09:08:11.738Z
 tags: 
 editor: markdown
 dateCreated: 2024-08-08T08:24:01.457Z
