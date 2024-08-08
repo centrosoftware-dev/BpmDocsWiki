@@ -1,8 +1,8 @@
 ---
-title: Avanzamento Processo in corso
-description: Come valorizzare le variabili e completare completare un task
+title: Avanzamento Processo
+description: Come valorizzare le variabili e completare completare un task in corso
 published: true
-date: 2024-08-07T10:16:28.988Z
+date: 2024-08-08T09:07:48.530Z
 tags: 
 editor: markdown
 dateCreated: 2024-08-07T09:41:10.454Z
