@@ -1,8 +1,8 @@
 ---
-title: Aggiornamento Processo esistente
+title: Aggiornamento Processo
 description: Come modificare e forzare uno stato in un processo esistente
 published: true
-date: 2024-08-08T08:29:04.254Z
+date: 2024-08-08T09:07:19.722Z
 tags: 
 editor: markdown
 dateCreated: 2024-08-07T10:51:16.832Z
