@@ -2,7 +2,7 @@
 title: Avviamento Nuovo Processo
 description: Come creare una nuova istanza di un modello di processo o classe documentale
 published: true
-date: 2024-08-08T09:21:55.412Z
+date: 2024-08-08T09:22:05.352Z
 tags: 
 editor: markdown
 dateCreated: 2024-08-07T09:27:17.444Z
@@ -31,7 +31,7 @@ Nel caso di una variabile di gruppo basterà utilizzare come chiave il gruppo e 
 > }
 {.is-info}
 
-### Proprietà
+### Parametri
 
 #### Variables
 > {
