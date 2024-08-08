@@ -2,7 +2,7 @@
 title: Avviamento Nuovo Processo
 description: Come creare una nuova istanza di un modello di processo o classe documentale
 published: true
-date: 2024-08-08T09:16:14.226Z
+date: 2024-08-08T09:18:50.198Z
 tags: 
 editor: markdown
 dateCreated: 2024-08-07T09:27:17.444Z
@@ -42,12 +42,12 @@ Nel caso di una variabile di gruppo basterà utilizzare come chiave il gruppo e 
 
 ## Risposta
 > {
+> &nbsp;&nbsp;&nbsp; "result": "true / false in base al risultato",
+> &nbsp;&nbsp;&nbsp; "message": "messaggio in caso di errore",
 > &nbsp;&nbsp;&nbsp; "documentName": "nome-univoco-processo",
 > &nbsp;&nbsp;&nbsp; "documentDescription": "descrizione-processo",
 > &nbsp;&nbsp;&nbsp; "instanceId": "codice-univoco-processo",
 > &nbsp;&nbsp;&nbsp; "isDuplicate": "true / false se il processo esiste già",
-> &nbsp;&nbsp;&nbsp; "duplicateDocumentName": "nome-processo-duplicato",
-> &nbsp;&nbsp;&nbsp; "result": "true / false in base al risultato",
-> &nbsp;&nbsp;&nbsp; "message": "messaggio in caso di errore",
+> &nbsp;&nbsp;&nbsp; "duplicateDocumentName": "nome-processo-duplicato"
 > }
 {.is-info}
