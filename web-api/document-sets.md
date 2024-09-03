@@ -9,16 +9,18 @@ Non ci sono parametri obbligatori da passare nel corpo della chiamata.
 - METODO:	`POST`
 
 ## Corpo
-> {
-> &nbsp;&nbsp;&nbsp; autenticazione
-> }
-{.is-info}
+```
+{
+  autenticazione
+}
+```
 
 ## Risposta
 Verrà restituito una lista con nome e descrizione di tutti i modelli di processo o delle classi documentali.
 
-> {
-> &nbsp;&nbsp;&nbsp; "nome": "nome-processo"
-> &nbsp;&nbsp;&nbsp; "descrizione": "descrizione-processo"
-> }
-{.is-info}
+```
+{
+  "nome": "nome-processo"
+  "descrizione": "descrizione-processo"
+}
+```
