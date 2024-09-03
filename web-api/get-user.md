@@ -8,22 +8,25 @@ Non ci sono parametri da inserire in quanto l'utente recuperato sarà quello del
 - METODO:	`POST`
 
 ## Corpo
-> {
-> &nbsp;&nbsp;&nbsp; autenticazione
-> }
-{.is-info}
+```
+{
+  autenticazione
+}
+```
 
 ## Risposta
-> {
-> &nbsp;&nbsp;&nbsp; "result": "true / false in base al risultato",
-> &nbsp;&nbsp;&nbsp; "message": "messaggio in caso di errore",
-> &nbsp;&nbsp;&nbsp; "userName": "nome-utente",
-> &nbsp;&nbsp;&nbsp; "isExternal": "true / false se è un utente di collaborazione esterna",
-> &nbsp;&nbsp;&nbsp; "groups": [ ... ]
-> }
-{.is-info}
+```
+{
+  "result": "true / false in base al risultato",
+  "message": "messaggio in caso di errore",
+  "userName": "nome-utente",
+  "isExternal": "true / false se è un utente di collaborazione esterna",
+  "groups": [ ... ]
+}
+```
 
 ### Parametri
 
 #### Groups
 Lista con i gruppi ai quali l'utente appartiene
+
