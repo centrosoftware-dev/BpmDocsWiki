@@ -10,34 +10,37 @@ I parametri obbligatori sono **model** e **documentName** (o **instanceId**).
 - METODO:	`POST`
 
 ## Corpo
-> {
-> &nbsp;&nbsp;&nbsp; autenticazione,
->
-> &nbsp;&nbsp;&nbsp; "model": "modello",
-> &nbsp;&nbsp;&nbsp; "documentName": "nome-univoco-processo",
-> &nbsp;&nbsp;&nbsp; "instanceId": "codice-univoco-processo",
-> &nbsp;&nbsp;&nbsp; "state": "nuovo-stato-processo",
-> &nbsp;&nbsp;&nbsp; "variables": { ... }
-> &nbsp;&nbsp;&nbsp; "resetGroups": [ ... ]
-> }
-{.is-info}
+```
+{
+  autenticazione,
+
+  "model": "modello",
+  "documentName": "nome-univoco-processo",
+  "instanceId": "codice-univoco-processo",
+  "state": "nuovo-stato-processo",
+  "variables": { ... }
+  "resetGroups": [ ... ]
+}
+```
 
 ### Parametri
 
 #### Variables
-> {
-> &nbsp;&nbsp;&nbsp; "nome": "valore"
-> &nbsp;&nbsp;&nbsp; "gruppo":
-> &nbsp;&nbsp;&nbsp; {
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "nome": "valore"
-> &nbsp;&nbsp;&nbsp; }
-> }
+```
+{
+  "nome": "valore"
+  "gruppo": {
+    "nome": "valore"
+  }
+}
+```
 
 ## Risposta
-> {
-> &nbsp;&nbsp;&nbsp; "result": "true / false in base al risultato",
-> &nbsp;&nbsp;&nbsp; "message": "messaggio in caso di errore",
-> &nbsp;&nbsp;&nbsp; "documentName": "nome-univoco-processo",
-> &nbsp;&nbsp;&nbsp; "instanceId": "codice-univoco-processo"
-> }
-{.is-info}
+```
+{
+  "result": "true / false in base al risultato",
+  "message": "messaggio in caso di errore",
+  "documentName": "nome-univoco-processo",
+  "instanceId": "codice-univoco-processo"
+}
+```
