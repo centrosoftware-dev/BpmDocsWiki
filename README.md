@@ -38,42 +38,42 @@ Si considera che una applicazione esterna, una volta dotata di un api key specif
 
 # Web Services
 
-> [Creazione Processo](/web-api/create-new-process)
+> [Creazione Processo](#web-api/create-new-process)
 {.is-info}
 
-> [Avanzamento Processo](/web-api/exec-task)
+> [Avanzamento Processo](#web-api/exec-task)
 {.is-info}
 
-> [Aggiornamento Processo](/web-api/update-process)
+> [Aggiornamento Processo](#web-api/update-process)
 {.is-info}
 
-> [Caricamento Allegato](/web-api/upload-attachmnet)
+> [Caricamento Allegato](#web-api/upload-attachmnet)
 {.is-info}
 
-> [Aggiornamento Processo](/web-api/update-process)
+> [Aggiornamento Processo](#web-api/update-process)
 {.is-info}
 
-> [Dati di un Processo / Documento](/web-api/get-process)
+> [Dati di un Processo / Documento](#web-api/get-process)
 {.is-info}
 
-> [Caricamento TodoList](/web-api/get-todo-list)
+> [Caricamento TodoList](#web-api/get-todo-list)
 {.is-info}
 
-> [Verifica Dati Utente](/web-api/get-user)
+> [Verifica Dati Utente](#web-api/get-user)
 {.is-info}
 
-> [Struttura di una Attività](/web-api/get-schema)
+> [Struttura di una Attività](#web-api/get-schema)
 {.is-info}
 
-> [Aggiornamento Task](/web-api/update-task)
+> [Aggiornamento Task](#web-api/update-task)
 {.is-info}
 
-> [Download Documento](/web-api/download-document)
+> [Download Documento](#web-api/download-document)
 {.is-info}
 
-> [Ricerca Documento](/web-api/search-documents)
+> [Ricerca Documento](#web-api/search-documents)
 {.is-info}
 
-> [Lista Modelli](/web-api/document-sets)
+> [Lista Modelli](#web-api/document-sets)
 {.is-info}
 
