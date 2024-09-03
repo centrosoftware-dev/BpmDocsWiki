@@ -9,90 +9,99 @@ I parametri obbligatori sono **model** e **documentName** (o **instanceId**).
 - METODO: `POST`
 
 ## Corpo
-> {
-> &nbsp;&nbsp;&nbsp; autenticazione
->
-> &nbsp;&nbsp;&nbsp; "model": "modello-processo",
-> &nbsp;&nbsp;&nbsp; "documentName": "nome-univoco-processo",
-> &nbsp;&nbsp;&nbsp; "instanceId": "codice-univoco-processo",
-> &nbsp;&nbsp;&nbsp; "includeVariables": [ ... ],
-> &nbsp;&nbsp;&nbsp; "includeGraph": true/false
-> }
-{.is-info}
+```
+{
+  autenticazione
+
+  "model": "modello-processo",
+  "documentName": "nome-univoco-processo",
+  "instanceId": "codice-univoco-processo",
+  "includeVariables": [ ... ],
+  "includeGraph": true/false
+}
+```
 
 ### Parametri
 
 #### IncludeVariables
 Restituisce le variabili appartenenti al processo.
-> (vuoto) - Nessuna variabile
-> "*" - Tutte le variabili
-> Lista con i nomi delle variabili visualizzate
+- (vuoto) - Nessuna variabile
+- "*" - Tutte le variabili
+- Lista con i nomi delle variabili visualizzate
 
 ## Risposta
-> {
-> &nbsp;&nbsp;&nbsp; "result": "true / false in base al risultato"
-> &nbsp;&nbsp;&nbsp; "message": "messaggio in caso di errore"
-> &nbsp;&nbsp;&nbsp; "model": "modello-processo",
-> &nbsp;&nbsp;&nbsp; "documentName": "nome-univoco-processo",
-> &nbsp;&nbsp;&nbsp; "documentDescription": "descrizione-processo",
-> &nbsp;&nbsp;&nbsp; "instanceId": "codice-univoco-processo",
-> &nbsp;&nbsp;&nbsp; "state": "stato-processo",
-> &nbsp;&nbsp;&nbsp; "activeTasks: [ { ... } ],
-> &nbsp;&nbsp;&nbsp; "links": [ { ... } ],
-> &nbsp;&nbsp;&nbsp; "variables: { ... }
-> }
-{.is-info}
+```
+{
+  "result": "true / false in base al risultato"
+  "message": "messaggio in caso di errore"
+  "model": "modello-processo",
+  "documentName": "nome-univoco-processo",
+  "documentDescription": "descrizione-processo",
+  "instanceId": "codice-univoco-processo",
+  "state": "stato-processo",
+  "activeTasks: [ { ... } ],
+  "links": [ { ... } ],
+  "variables: { ... }
+}
+```
 
 Per il documento si avranno i seguenti campi in più
-
-> {
-> &nbsp;&nbsp;&nbsp; "documentDate": "data-documento",
-> &nbsp;&nbsp;&nbsp; "documentDueDate": "data-scadenza-documento",
-> &nbsp;&nbsp;&nbsp; "barcode": "barcode",
-> &nbsp;&nbsp;&nbsp; "versions": [ { ... } ],
-> }
-{.is-info}
+```
+{
+  "documentDate": "data-documento",
+  "documentDueDate": "data-scadenza-documento",
+  "barcode": "barcode",
+  "versions": [ { ... } ],
+}
+```
 
 ### Parametri
 
 #### ActiveTasks
 Task attualmente attivi
-> {
-> &nbsp;&nbsp;&nbsp; "activity": "attività-processo",
-> &nbsp;&nbsp;&nbsp; "activityDescription": "descrizione-attività",
-> &nbsp;&nbsp;&nbsp; "userName": "utente-attività"
-> }
+```
+{
+  "activity": "attività-processo",
+  "activityDescription": "descrizione-attività",
+  "userName": "utente-attività"
+}
+```
 
 #### Links
 Processi collegati
-> {
-> &nbsp;&nbsp;&nbsp; "model": "modello-processo",
-> &nbsp;&nbsp;&nbsp; "documentName": "nome-univoco-processo",
-> &nbsp;&nbsp;&nbsp; "documentDescription": "descrizione-processo",
-> &nbsp;&nbsp;&nbsp; "instanceId": "codice-univoco-processo"
-> }
+```
+{
+  "model": "modello-processo",
+  "documentName": "nome-univoco-processo",
+  "documentDescription": "descrizione-processo",
+  "instanceId": "codice-univoco-processo"
+}
+```
 
 #### Variables
 Variabili del processo
-> {
-> &nbsp;&nbsp;&nbsp; "nome": "valore",
-> &nbsp;&nbsp;&nbsp; "gruppo":
-> &nbsp;&nbsp;&nbsp; {
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "nome": "valore"
-> &nbsp;&nbsp;&nbsp; }
-> }
+```
+{
+  "nome": "valore",
+  "gruppo": {
+    "nome": "valore"
+  }
+}
+```
 
 #### Versions
 Versioni del documento
-> {
-> &nbsp;&nbsp;&nbsp; "fileName": "nome-file-documento",
-> &nbsp;&nbsp;&nbsp; "version": "numero-versione",
-> &nbsp;&nbsp;&nbsp; "description": "descrizione-versione",
-> &nbsp;&nbsp;&nbsp; "uploadDate": "data-caricamento",
-> &nbsp;&nbsp;&nbsp; "username": "utente-versione",
-> &nbsp;&nbsp;&nbsp; "state": "stato-versione",
-> &nbsp;&nbsp;&nbsp; "extension": "estensione-documento"
-> }
+```
+{
+  "fileName": "nome-file-documento",
+  "version": "numero-versione",
+  "description": "descrizione-versione",
+  "uploadDate": "data-caricamento",
+  "username": "utente-versione",
+  "state": "stato-versione",
+  "extension": "estensione-documento"
+}
+```
 
 ##### Version State
 Stato delle versioni del documento
