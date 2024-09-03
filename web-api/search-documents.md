@@ -12,49 +12,54 @@ L'unico parametro obbligatorio è **model**.
 - METODO:	`POST`
 
 ## Corpo
-> {
-> &nbsp;&nbsp;&nbsp; autenticazione,
->
-> &nbsp;&nbsp;&nbsp; "model": "modello",
-> &nbsp;&nbsp;&nbsp; "filters": [ { ... } ]
-> }
-{.is-info}
+```
+{
+  autenticazione,
+
+  "model": "modello",
+  "filters": [ { ... } ]
+}
+```
 
 ### Parametri
 
 #### Filters
-> {
-> &nbsp;&nbsp;&nbsp; "name": "nome-variabile"
-> &nbsp;&nbsp;&nbsp; "value": "valore-variabile"
-> &nbsp;&nbsp;&nbsp; "valueIn": [ ... ]
-> }
+```
+{
+  "name": "nome-variabile"
+  "value": "valore-variabile"
+  "valueIn": [ ... ]
+}
+```
 
 ## Risposta
-> {
-> &nbsp;&nbsp;&nbsp; variabili,
-> &nbsp;&nbsp;&nbsp;
-> &nbsp;&nbsp;&nbsp; "fix_data": "data-creazione-documento",
-> &nbsp;&nbsp;&nbsp; "fix_name": "nome-univoco-documento",
-> &nbsp;&nbsp;&nbsp; "fix_modificato": "modificato",
-> &nbsp;&nbsp;&nbsp; "fix_text": "testo-documento",
-> &nbsp;&nbsp;&nbsp; "fix_lifecycle": "modello-documento",
-> &nbsp;&nbsp;&nbsp; "fix_owners": "propietari-documento",
-> &nbsp;&nbsp;&nbsp; "fix_state": "stato-documento",
-> &nbsp;&nbsp;&nbsp; "fix_descrizione": "descrizione-documento",
-> &nbsp;&nbsp;&nbsp; "fix_utecreazione": "utente-creazione",
-> &nbsp;&nbsp;&nbsp; "fix_documentdate": "data-documento",
-> &nbsp;&nbsp;&nbsp; "fix_duedate": "data-scadenza-documento",
-> &nbsp;&nbsp;&nbsp; "fix_barcode": "barcode-documento",
-> &nbsp;&nbsp;&nbsp; "fix_currentversion": "versione-documento",
-> &nbsp;&nbsp;&nbsp; "fix_filename": "nome-documento",
-> &nbsp;&nbsp;&nbsp; "id": "codice-univoco-documento",
-> &nbsp;&nbsp;&nbsp; "must_lifecycle": "modello-documento",
-> &nbsp;&nbsp;&nbsp; "instanceId": "codice-univoco-documento",
-> &nbsp;&nbsp;&nbsp; "must_checkedout": " "
-> }
-{.is-info}
+```
+{
+  variabili,
+
+  "fix_data": "data-creazione-documento",
+  "fix_name": "nome-univoco-documento",
+  "fix_modificato": "modificato",
+  "fix_text": "testo-documento",
+  "fix_lifecycle": "modello-documento",
+  "fix_owners": "propietari-documento",
+  "fix_state": "stato-documento",
+  "fix_descrizione": "descrizione-documento",
+  "fix_utecreazione": "utente-creazione",
+  "fix_documentdate": "data-documento",
+  "fix_duedate": "data-scadenza-documento",
+  "fix_barcode": "barcode-documento",
+  "fix_currentversion": "versione-documento",
+  "fix_filename": "nome-documento",
+  "id": "codice-univoco-documento",
+  "must_lifecycle": "modello-documento",
+  "instanceId": "codice-univoco-documento",
+  "must_checkedout": " "
+}
+```
 
 ### Parametri
 
 ##### Varibili
 Per ogni variabile verrà generata una riga nell'oggetto json con chiave il nome della variabile e valore il valore della variabile.
+
