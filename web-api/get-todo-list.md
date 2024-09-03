@@ -8,19 +8,20 @@ Non ci sono parametri obbligatori e nel caso non venga specificato un utente ver
 - METODO:	`POST`
 
 ## Corpo
-> {
-> &nbsp;&nbsp;&nbsp; autenticazione,
->
-> &nbsp;&nbsp;&nbsp; "fromDate": "data-inizio-filtro",
-> &nbsp;&nbsp;&nbsp; "toDate": "data-fine-filtro",
-> &nbsp;&nbsp;&nbsp; "filterByUser": "utente-filtro",
-> &nbsp;&nbsp;&nbsp; "filterByText": "testo-filtro",
-> &nbsp;&nbsp;&nbsp; "filterByPriority": "priorità-filtro",
-> &nbsp;&nbsp;&nbsp; "includeCompleted": "true / false",
-> &nbsp;&nbsp;&nbsp; "includePlanned": "true / false",
-> &nbsp;&nbsp;&nbsp; "includeCC": "true / false"
-> }
-{.is-info}
+```
+{
+  autenticazione,
+
+  "fromDate": "data-inizio-filtro",
+  "toDate": "data-fine-filtro",
+  "filterByUser": "utente-filtro",
+  "filterByText": "testo-filtro",
+  "filterByPriority": "priorità-filtro",
+  "includeCompleted": "true / false",
+  "includePlanned": "true / false",
+  "includeCC": "true / false"
+}
+```
 
 ### Parametri
 
@@ -28,52 +29,61 @@ Non ci sono parametri obbligatori e nel caso non venga specificato un utente ver
 Utente per il quale verranno visualizzate le attività.
 
 Può essere un utente bpm o un utente collegato a sam
-> {
-> &nbsp;&nbsp;&nbsp; "samUser": "codice-sam"
-> }
+```
+{
+  "samUser": "codice-sam"
+}
+```
 
 ---
 
-> {
-> &nbsp;&nbsp;&nbsp; "samPortalUser: "codice-sam",
-> &nbsp;&nbsp;&nbsp; "samPortalCompany": "azienda-sam"
-> }
+```
+{
+  "samPortalUser: "codice-sam",
+  "samPortalCompany": "azienda-sam"
+}
+```
 
 ## Risposta
-> {
-> &nbsp;&nbsp;&nbsp; "result": "`true / false in base al risultato`",
-> &nbsp;&nbsp;&nbsp; "message": "`messaggio in caso di errore`",
-> &nbsp;&nbsp;&nbsp; "todolist": [ { ... } ]
-> }
-{.is-info}
+```
+{
+  "result": "`true / false in base al risultato`",
+  "message": "`messaggio in caso di errore`",
+  "todolist": [ { ... } ]
+}
+```
 
 ### Parametri
 
 #### TodoList
-> {
-> &nbsp;&nbsp;&nbsp; "assignedUsers: [ { ... } ],
-> &nbsp;&nbsp;&nbsp; "activityName": "nome-attività",
-> &nbsp;&nbsp;&nbsp; "activityDescription": "descrizione-attività",
-> &nbsp;&nbsp;&nbsp; "instanceId": "codice-univoco-processo",
-> &nbsp;&nbsp;&nbsp; "model": "modello-processo",
-> &nbsp;&nbsp;&nbsp; "documentName": "nome-univoco-processo",
-> &nbsp;&nbsp;&nbsp; "documentDescription": "descrizione-processo",
-> &nbsp;&nbsp;&nbsp; "isCC": "true / false",
-> &nbsp;&nbsp;&nbsp; "startDate": "data-inizio-attività",
-> &nbsp;&nbsp;&nbsp; "endDate": "data-fine-attività",
-> &nbsp;&nbsp;&nbsp; "dueDate": "data-scadenza-attività",
-> &nbsp;&nbsp;&nbsp; "state": "stato-attività",
-> &nbsp;&nbsp;&nbsp; "priority": "priorità-attività",
-> &nbsp;&nbsp;&nbsp; "processHeaders": [ { ... } ],
-> &nbsp;&nbsp;&nbsp; "activityLink": "link-web-attività",
-> &nbsp;&nbsp;&nbsp; "processLink": "link-web-processo",
-> }
+```
+{
+  "assignedUsers: [ { ... } ],
+  "activityName": "nome-attività",
+  "activityDescription": "descrizione-attività",
+  "instanceId": "codice-univoco-processo",
+  "model": "modello-processo",
+  "documentName": "nome-univoco-processo",
+  "documentDescription": "descrizione-processo",
+  "isCC": "true / false",
+  "startDate": "data-inizio-attività",
+  "endDate": "data-fine-attività",
+  "dueDate": "data-scadenza-attività",
+  "state": "stato-attività",
+  "priority": "priorità-attività",
+  "processHeaders": [ { ... } ],
+  "activityLink": "link-web-attività",
+  "processLink": "link-web-processo",
+}
+```
 
 ##### AssignedUsers
-> {
-> &nbsp;&nbsp;&nbsp; "userName: "utente-bpm",
-> &nbsp;&nbsp;&nbsp; "samUser": "codice-sam"
-> }
+```
+{
+  "userName: "utente-bpm",
+  "samUser": "codice-sam"
+}
+```
 
 ##### State
 - active - Attività attiva
