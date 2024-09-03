@@ -44,28 +44,28 @@ Si considera che una applicazione esterna, una volta dotata di un api key specif
 
 # Web Services
 
-> [Creazione Processo](./web-api/create-new-process.md)
+- [Creazione Processo](./web-api/create-new-process.md)
 
-> [Avanzamento Processo](./web-api/exec-task.md)
+- [Avanzamento Processo](./web-api/exec-task.md)
 
-> [Aggiornamento Processo](./web-api/update-process.md)
+- [Aggiornamento Processo](./web-api/update-process.md)
 
-> [Caricamento Allegato](./web-api/upload-attachmnet.md)
+- [Caricamento Allegato](./web-api/upload-attachmnet.md)
 
-> [Aggiornamento Processo](./web-api/update-process.md)
+- [Aggiornamento Processo](./web-api/update-process.md)
 
-> [Dati di un Processo / Documento](./web-api/get-process.md)
+- [Dati di un Processo / Documento](./web-api/get-process.md)
 
-> [Caricamento TodoList](./web-api/get-todo-list.md)
+- [Caricamento TodoList](./web-api/get-todo-list.md)
 
-> [Verifica Dati Utente](./web-api/get-user.md)
+- [Verifica Dati Utente](./web-api/get-user.md)
 
-> [Struttura di una Attività](./web-api/get-schema.md)
+- [Struttura di una Attività](./web-api/get-schema.md)
 
-> [Aggiornamento Task](./web-api/update-task.md)
+- [Aggiornamento Task](./web-api/update-task.md)
 
-> [Download Documento](./web-api/download-document.md)
+- [Download Documento](./web-api/download-document.md)
 
-> [Ricerca Documento](./web-api/search-documents.md)
+- [Ricerca Documento](./web-api/search-documents.md)
 
 > [Lista Modelli](./web-api/document-sets.md)
