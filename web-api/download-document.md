@@ -10,15 +10,16 @@ I parametri obbligatori sono **model** e **name** (o **instanceId**).
 - METODO:	`POST`
 
 ## Corpo
-> {
-> &nbsp;&nbsp;&nbsp; autenticazione,
->
-> &nbsp;&nbsp;&nbsp; "model": "modello",
-> &nbsp;&nbsp;&nbsp; "name": "nome-univoco-processo",
-> &nbsp;&nbsp;&nbsp; "instanceId": "codice-univoco-processo",
-> &nbsp;&nbsp;&nbsp; "version": versione-documento
-> }
-{.is-info}
+```
+{
+  autenticazione,
+
+  "model": "modello",
+  "name": "nome-univoco-processo",
+  "instanceId": "codice-univoco-processo",
+  "version": versione-documento
+}
+```
 
 ### Parametri
 
@@ -28,4 +29,3 @@ Non specificandola o valorizzandola con 0 verrà restituita il documento attivo.
 
 ## Risposta
 In base alla chiamata può essere restituito il documento in formato binario, che potrà essere scaricato, oppure un json con le informazioni del documento e il file in formato base64.
-
