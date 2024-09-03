@@ -47,7 +47,7 @@ Si considera che una applicazione esterna, una volta dotata di un api key specif
 > [Creazione Processo](./web-api/create-new-process.md)
 
 > [Avanzamento Processo](./web-api/exec-task.md)
-> 
+
 > [Aggiornamento Processo](./web-api/update-process.md)
 
 > [Caricamento Allegato](./web-api/upload-attachmnet.md)
