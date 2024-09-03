@@ -68,4 +68,4 @@ Si considera che una applicazione esterna, una volta dotata di un api key specif
 
 - [Ricerca Documento](./web-api/search-documents.md)
 
-> [Lista Modelli](./web-api/document-sets.md)
+- [Lista Modelli](./web-api/document-sets.md)
