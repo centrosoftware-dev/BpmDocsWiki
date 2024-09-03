@@ -12,34 +12,37 @@ Nel caso di una variabile di gruppo basterà utilizzare come chiave il gruppo e 
 - METODO:	`POST`
 
 ## Corpo
-> {
-> &nbsp;&nbsp;&nbsp; autenticazione,
->
-> &nbsp;&nbsp;&nbsp; "model": "modello-processo",
-> &nbsp;&nbsp;&nbsp; "startObject": "oggetto-di-avvio",
-> &nbsp;&nbsp;&nbsp; "variables": { ... }
-> }
-{.is-info}
+```
+{
+  autenticazione,
+
+  "model": "modello-processo",
+  "startObject": "oggetto-di-avvio",
+  "variables": { ... }
+}
+```
 
 ### Parametri
 
 #### Variables
-> {
-> &nbsp;&nbsp;&nbsp; "nome": "valore",
-> &nbsp;&nbsp;&nbsp; "gruppo":
-> &nbsp;&nbsp;&nbsp; {
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "nome": "valore"
-> &nbsp;&nbsp;&nbsp; }
-> }
+```
+{
+  "nome": "valore",
+  "gruppo": {
+    "nome": "valore"
+  }
+}
+```
 
 ## Risposta
-> {
-> &nbsp;&nbsp;&nbsp; "result": "true / false in base al risultato",
-> &nbsp;&nbsp;&nbsp; "message": "messaggio in caso di errore",
-> &nbsp;&nbsp;&nbsp; "documentName": "nome-univoco-processo",
-> &nbsp;&nbsp;&nbsp; "documentDescription": "descrizione-processo",
-> &nbsp;&nbsp;&nbsp; "instanceId": "codice-univoco-processo",
-> &nbsp;&nbsp;&nbsp; "isDuplicate": "true / false se il processo esiste già",
-> &nbsp;&nbsp;&nbsp; "duplicateDocumentName": "nome-processo-duplicato"
-> }
-{.is-info}
+```
+{
+  "result": "true / false in base al risultato",
+  "message": "messaggio in caso di errore",
+  "documentName": "nome-univoco-processo",
+  "documentDescription": "descrizione-processo",
+  "instanceId": "codice-univoco-processo",
+  "isDuplicate": "true / false se il processo esiste già",
+  "duplicateDocumentName": "nome-processo-duplicato"
+}
+```
