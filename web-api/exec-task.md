@@ -11,31 +11,33 @@ Durante l'avanzamento verranno controllate le condizioni di validazione e di obb
 - METODO: `POST`
 
 ## Corpo
-> {
-> &nbsp;&nbsp;&nbsp; autenticazione,
->
-> &nbsp;&nbsp;&nbsp; "model": "modello",
-> &nbsp;&nbsp;&nbsp; "documentName": "nome-univoco-processo",
-> &nbsp;&nbsp;&nbsp; "instanceId": "codice-univoco-processo"
-> &nbsp;&nbsp;&nbsp; "activity": "nome-attività"
-> &nbsp;&nbsp;&nbsp; "comments": "note-avanzamento"
-> &nbsp;&nbsp;&nbsp; "variables": { ... }
-> }
-{.is-info}
+```
+{
+  autenticazione,
+
+  "model": "modello",
+  "documentName": "nome-univoco-processo",
+  "instanceId": "codice-univoco-processo"
+  "activity": "nome-attività"
+  "comments": "note-avanzamento"
+  "variables": { ... }
+}
+```
 
 #### Variables
-> {
-> &nbsp;&nbsp;&nbsp; "nome": "valore"
-> &nbsp;&nbsp;&nbsp; "gruppo":
-> &nbsp;&nbsp;&nbsp; {
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "nome": "valore"
-> &nbsp;&nbsp;&nbsp; }
-> }
-{.is-info}
+```
+{
+  "nome": "valore"
+  "gruppo": {
+    "nome": "valore"
+  }
+}
+```
 
 ## Risposta
-> {
-> &nbsp;&nbsp;&nbsp; "result": "true / false in base al risultato"
-> &nbsp;&nbsp;&nbsp; "message": "messaggio in caso di errore"
-> }
-{.is-info}
+```
+{
+  "result": "true / false in base al risultato"
+  "message": "messaggio in caso di errore"
+}
+```
